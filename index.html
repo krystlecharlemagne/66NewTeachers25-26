@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Teacher Orientation - P.S./I.S. 66</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .slideshow-container {
+            max-width: 900px;
+            width: 100%;
+            position: relative;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .slide {
+            display: none;
+            padding: 60px 50px;
+            min-height: 600px;
+            text-align: center;
+            position: relative;
+            background: white;
+        }
+
+        .slide:first-child {
+            display: block;
+        }
+
+        .slide h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .slide h2 {
+            color: #3498db;
+            font-size: 2em;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .slide h3 {
+            color: #e74c3c;
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            font-weight: 600;
+        }
+
+        .slide p, .slide li {
+            color: #34495e;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .slide ul, .slide ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        .slide li {
+            margin-bottom: 10px;
+        }
+
+        .title-slide {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+        }
+
+        .title-slide h1 {
+            color: white;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+
+        .title-slide p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        .navigation {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 0 50px;
+        }
+
+        .nav-btn {
+            padding: 12px 24px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .nav-btn:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .slide-counter {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background: rgba(52, 73, 94, 0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #3498db;
+        }
+
+        .checklist {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .checklist h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .icon-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .icon-item:hover {
+            border-color: #3498db;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide-counter">
+            <span id="current-slide">1</span> / <span id="total-slides">13</span>
+        </div>
+
+        <!-- Slide 1: Title -->
+        <div class="slide title-slide">
+            <h1>🍎 Welcome New Teachers!</h1>
+            <p>P.S./I.S. 66 Canarsie Blue Jays</p>
+            <p style="margin-top: 20px; font-size: 1.1em;">Your Complete Back-to-School Orientation Guide</p>
+            <p style="margin-top: 30px; font-size: 1em;">
+                <strong>Principal:</strong> Krystle Charlemagne<br>
+                <strong>Assistant Principal:</strong> Patrick Petot<br>
+                <strong>Assistant Principal:</strong> Natacha George
+            </p>
+            <p style="margin-top: 20px; font-size: 1.1em;">Preparing you for an amazing 2025-2026 school year ahead</p>
+        </div>
+
+        <!-- Slide 2: T.L.C. Welcome Message -->
+        <div class="slide">
+            <h2>💙 Welcome to P.S./I.S. 66 - Canarsie Blue Jays!</h2>
+            
+            <div class="highlight">
+                <h2 style="text-align: center; margin-bottom: 20px;">This year, we lead with T.L.C.</h2>
+                <h2 style="text-align: center; color: #3498db;">💙 Trust. Loyalty. Children. 💙</h2>
+            </div>
+
+            <h3>Principal Charlemagne's Welcome Message</h3>
+            <p style="font-style: italic; font-size: 1.2em; line-height: 1.8;">
+                "At P.S./I.S. 66, T.L.C. doesn't just mean tender love and care. It means:
+            </p>
+            
+            <ul style="font-size: 1.1em; margin: 20px 0;">
+                <li><strong>Trust</strong> — We trust each other to show up, step up, and speak up.</li>
+                <li><strong>Loyalty</strong> — We are loyal to our students, our mission, and each other — even when things get hard.</li>
+                <li><strong>Children</strong> — They are our why. They are the center of every decision, every lesson, and every heartbeat in this building.</li>
+            </ul>
+
+            <p style="font-style: italic; font-size: 1.2em; line-height: 1.8;">
+                This is not just a job. This is a calling. And in this space, we hold each other accountable to lead with T.L.C. — every single day."
+            </p>
+
+            <div style="text-align: center; margin-top: 30px; font-size: 1.3em; color: #3498db; font-weight: bold;">
+                #RiseAndThrive #LeadWithTLC
+            </div>
+        </div>
+
+        <!-- Slide 3: Mission, Vision & Today's Agenda -->
+        <div class="slide">
+            <h2>🌟 Our Mission & Vision</h2>
+            
+            <div class="highlight">
+                <p><strong>B.L.U.E. - Brilliant Learners United in Excellence</strong></p>
+                <p>Our core values: Collaboration, Empathy, Integrity, and Resilience</p>
+            </div>
+            
+            <h3>Our Mission</h3>
+            <p>We empower a community of learners through data-informed, differentiated instruction and a rigorous curriculum. Our commitment to literacy and numeracy ensures all students master essential skills for effective communication and critical thinking.</p>
+            
+            <h3>Our Vision</h3>
+            <p>P.S./I.S. 66 is a data-driven community where literacy and critical thinking are the pillars of empowered, lifelong learners.</p>
+            
+            <h3>Today's Agenda</h3>
+            <ul>
+                <li>T.L.C. philosophy and 2025-26 instructional foci</li>
+                <li>Essential policies and procedures</li>
+                <li>Classroom management and restorative practices</li>
+                <li>Technology tools and grading systems</li>
+                <li>Support systems and resources</li>
+            </ul>
+        </div>
+
+        <!-- Slide 4: 2025-26 Instructional Focus -->
+        <div class="slide">
+            <h2>🎯 2025-26 Instructional Focus</h2>
+            
+            <h3>Literacy Focus</h3>
+            <p>Teachers will integrate research-based literacy strategies into <strong>all subjects</strong>, with special focus on reading comprehension and vocabulary acquisition to scaffold literacy skills from foundational phonics to advanced text analysis.</p>
+
+            <h3>Lesson Internalization & Instructional Enhancement</h3>
+            <p>Teachers will engage in <strong>lesson internalization</strong> to strengthen content knowledge, plan with a clear <strong>instructional lens</strong>, and use <strong>data-driven decisions</strong> to scaffold instruction, <strong>monitor progress</strong>, and deliver <strong>rigorous, well-paced lessons</strong> that <strong>accelerate student learning</strong>.</p>
+
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <h3>📊 Data-Driven</h3>
+                    <p>Monitor core instruction effectively</p>
+                </div>
+                <div class="icon-item">
+                    <h3>🎯 Targeted Feedback</h3>
+                    <p>Provide specific, actionable feedback</p>
+                </div>
+                <div class="icon-item">
+                    <h3>🤝 Engaging Instruction</h3>
+                    <p>Rigorous, relevant, interactive learning</p>
+                </div>
+                <div class="icon-item">
+                    <h3>🚀 Accelerated Outcomes</h3>
+                    <p>Foster critical thinking and mastery</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Essential Policies & Procedures -->
+        <div class="slide">
+            <h2>📋 Essential Policies & Daily Operations</h2>
+            
+            <h3>Attendance & Timing</h3>
+            <ul>
+                <li><strong>Arrive by 8:00 AM</strong> - Move timecard from "out" to "in"</li>
+                <li>If absent: Email Mrs. Charlemagne, Mr. Petot, Ms. George, and Ms. Mims by 6:30 AM</li>
+                <li>Use SubCentral for substitute requests</li>
+                <li>Sign out if leaving during prep periods</li>
+            </ul>
+
+            <h3>Chain of Command</h3>
+            <ul>
+                <li><strong>Mrs. Charlemagne</strong> - Principal</li>
+                <li><strong>Mr. Petot</strong> - Assistant Principal</li>
+                <li><strong>Ms. George</strong> - Assistant Principal</li>
+                <li>Support: Ms. Grant, Ms. King, Ms. Heyward, Mr. Coward</li>
+            </ul>
+
+            <h3>Bell Schedule (2025-26)</h3>
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <h3>📚 Elementary</h3>
+                    <p><strong>7 periods:</strong> 8:00 AM - 2:20 PM<br>
+                    <strong>Period length:</strong> 50-53 minutes<br>
+                    <strong>Lunch periods:</strong> L1 (K,1st,2nd,3rd) & L2 (4th,5th)</p>
+                </div>
+                <div class="icon-item">
+                    <h3>🎓 Middle School</h3>
+                    <p><strong>8 periods:</strong> 8:00 AM - 2:20 PM<br>
+                    <strong>Period length:</strong> 44-45 minutes<br>
+                    <strong>Lunch periods:</strong> L1 (6th), L2 (7th), L3 (8th)</p>
+                </div>
+            </div>
+            <p><strong>Monday PD:</strong> 2:20-3:20 PM (Location TBD) | <strong>Passing time:</strong> 3 minutes between periods</p>
+        </div>
+
+        <!-- Slide 6: Restorative Practices & Ladder of Referral -->
+        <div class="slide">
+            <h2>🤝 Restorative Practices & Ladder of Referral</h2>
+
+            <h3>School-wide Community Agreements</h3>
+            <ul>
+                <li>We treat everyone with dignity and respect</li>
+                <li>Honesty, integrity, and kindness</li>
+                <li>Be responsible to yourself, others, and the school community</li>
+                <li>Everyone has a voice and belongs here</li>
+                <li>Be proactive with your actions, attitudes, and beliefs</li>
+                <li>Talk it out and find win-win solutions</li>
+            </ul>
+
+            <h3>Ladder of Referral Process</h3>
+            <div class="checklist">
+                <ol>
+                    <li><strong>Try in-class strategies</strong> first</li>
+                    <li><strong>Seek support</strong> from Grade Leader or Department Chair</li>
+                    <li><strong>Refer to PPS Team:</strong> Dean Grant, Counselor King, Social Worker Heyward</li>
+                    <li><strong>Escalate to Assistant Principal:</strong> George (Grades 5-8) / Petot (Grades 3K-4)</li>
+                    <li><strong>Principal Charlemagne</strong> for unresolved issues</li>
+                </ol>
+            </div>
+
+            <div class="highlight">
+                <p><strong>Important:</strong> No shouting or placing students in hallways. Use compassionate correction and follow the ladder before requesting classroom removal.</p>
+            </div>
+        </div>
+
+        <!-- Slide 7: Grading Policy -->
+        <div class="slide">
+            <h2>📊 School-Wide Grading Policy (2025-26)</h2>
+
+            <h3>Updated Grading Breakdown</h3>
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <h3>40%</h3>
+                    <p><strong>Assessments</strong><br>Tests, projects, performance tasks measuring standards mastery</p>
+                </div>
+                <div class="icon-item">
+                    <h3>35%</h3>
+                    <p><strong>Classwork</strong><br>Daily practice, in-class assignments aligned to objectives</p>
+                </div>
+                <div class="icon-item">
+                    <h3>15%</h3>
+                    <p><strong>Participation</strong><br>Engagement, collaboration, preparedness, learning behaviors</p>
+                </div>
+                <div class="icon-item">
+                    <h3>10%</h3>
+                    <p><strong>Homework</strong><br>Independent practice reinforcing skills</p>
+                </div>
+            </div>
+
+            <h3>Grade Update Requirements</h3>
+            <ul>
+                <li><strong>Weekly:</strong> Homework, classwork, and quizzes</li>
+                <li><strong>Within one week:</strong> Major assessments and projects</li>
+                <li><strong>Digital access:</strong> Online gradebook for parent/student viewing</li>
+                <li><strong>Minimum grade:</strong> No final course grade lower than 55 (DOE guidelines)</li>
+            </ul>
+        </div>
+
+        <!-- Slide 8: Distraction-Free Learning Policy -->
+        <div class="slide">
+            <h2>📱 Distraction-Free Learning Policy (Effective Sept 3, 2025)</h2>
+
+            <h3>New NYS Legislation & Chancellor's Regulation A-413</h3>
+            <p>All public schools must now implement policies limiting student access to internet-enabled personal devices during instructional hours.</p>
+
+            <h3>Collection & Storage Procedures</h3>
+            <div class="checklist">
+                <ul>
+                    <li>Students turn off ALL internet-enabled devices upon arrival</li>
+                    <li>Devices placed in designated collection bins</li>
+                    <li>Devices returned at dismissal (2:20 PM regular / 5:30 PM after-school)</li>
+                    <li>Late arrivals/early dismissals follow check-in/check-out protocols</li>
+                    <li><strong>School not responsible for uncollected devices</strong></li>
+                </ul>
+            </div>
+
+            <h3>Progressive Consequences for Violations</h3>
+            <ul>
+                <li><strong>1st Offense:</strong> Device held until dismissal</li>
+                <li><strong>2nd Offense:</strong> Parent must retrieve device</li>
+                <li><strong>3rd+ Offense:</strong> Meeting with leadership, additional interventions</li>
+            </ul>
+
+            <h3>Authorized Exceptions</h3>
+            <p>IEP/504 plans, medical documentation, translation/caregiving needs</p>
+        </div>
+
+        <!-- Slide 9: Safety & Emergency Procedures -->
+        <div class="slide">
+            <h2>🚨 Safety & Emergency Procedures</h2>
+
+            <h3>Door Alarms & Building Security</h3>
+            <ul>
+                <li><strong>All doors equipped with alarms</strong> - remain alarmed at all times</li>
+                <li><strong>Staff use ONLY main entrance</strong> for entering/exiting</li>
+                <li>If door alarm sounds: Report immediately to main office (ext. 1000)</li>
+                <li>Emergency button in each classroom - notify office of emergency</li>
+            </ul>
+
+            <h3>Security Codes</h3>
+            <ul>
+                <li><strong>Soft/Hard Lockdown:</strong> Keep doors locked, windows covered, account for all students</li>
+                <li><strong>"Code Blue (room #)":</strong> AED-CPR emergency (for responders only)</li>
+                <li><strong>"Lockdown lifted":</strong> Resume normal activities</li>
+            </ul>
+
+            <h3>Emergency Drill Procedures</h3>
+            <ul>
+                <li>Carry evacuation folder and attendance records</li>
+                <li>Students maintain absolute silence</li>
+                <li>Follow posted evacuation routes</li>
+                <li>Trained AED-CPR responders available in building</li>
+            </ul>
+        </div>
+
+        <!-- Slide 10: Lesson Planning & Classroom Setup -->
+        <div class="slide">
+            <h2>📝 Lesson Planning & Classroom Setup</h2>
+
+            <h3>Required Lesson Plan Elements</h3>
+            <ul>
+                <li><strong>Learning Standard</strong> being addressed</li>
+                <li><strong>Learning Targets & Success Criteria</strong> (posted on whiteboard)</li>
+                <li>Differentiation/grouping strategies</li>
+                <li>Materials and concept development</li>
+                <li>Assessment/evaluation/exit tickets</li>
+                <li>Higher order thinking questions</li>
+            </ul>
+
+            <h3>Classroom Display Requirements</h3>
+            <ul>
+                <li><strong>Whiteboard:</strong> Daily schedule, school heading, learning targets, success criteria</li>
+                <li><strong>Door:</strong> Teacher name and class sign (windows NOT covered except during drills)</li>
+                <li><strong>Bulletin boards:</strong> Current student work, reflect standards, change every 5-6 weeks</li>
+                <li>Emergency procedures posted by door</li>
+            </ul>
+
+            <div class="highlight">
+                <p><strong>Remember:</strong> Instruction must be student-centered, differentiated, and aligned with Next Generation Standards using Danielson's Framework.</p>
+            </div>
+        </div>
+
+        <!-- Slide 11: Support Network -->
+        <div class="slide">
+            <h2>🤗 Your Support Network</h2>
+
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <h3>👥 Grade Level Team</h3>
+                    <p>Monthly meetings with administration to review data and plan instruction</p>
+                </div>
+                <div class="icon-item">
+                    <h3>🎯 Guidance & PPS Team</h3>
+                    <p>Counselor King, Psychologist, Social Worker Heyward for student support</p>
+                </div>
+                <div class="icon-item">
+                    <h3>👨‍💼 School Leadership</h3>
+                    <p><strong>Principal:</strong> Krystle Charlemagne<br>
+                    <strong>Assistant Principals:</strong> Patrick Petot, Natacha George<br>
+                    <strong>Dean:</strong> Antoinette Grant</p>
+                </div>
+                <div class="icon-item">
+                    <h3>👩‍👧‍👦 Parent Coordinator</h3>
+                    <p>Ms. Tiera Brown - parental involvement activities</p>
+                </div>
+            </div>
+
+            <h3>Important Communications</h3>
+            <ul>
+                <li><strong>Morning Announcements:</strong> Watch/listen daily for accountability</li>
+                <li><strong>Email:</strong> Check DOE email at least once daily</li>
+                <li><strong>Parent Communication:</strong> Respond within 24 hours, clear all letters with supervisor</li>
+                <li><strong>Substitute Folders:</strong> Update monthly with Ms. Della Rocca</li>
+            </ul>
+
+            <div class="highlight">
+                <p><strong>🚨 Emergency Contact:</strong> Any suicidal ideations must be reported immediately to guidance counselor or administration - <strong>verbal conversation required, not voicemail/email</strong>.</p>
+            </div>
+        </div>
+
+        <!-- Slide 12: Essential Links & Resources -->
+        <div class="slide">
+            <h2>🔗 Essential Links & Resources</h2>
+
+            <h3>Daily Operations</h3>
+            <ul>
+                <li><strong>DOE Attendance/Gradebook/Messaging:</strong><br>
+                    <a href="https://apps.schools.nyc/Attendance/" target="_blank">https://apps.schools.nyc/Attendance/</a></li>
+                <li><strong>Early Departure/Personal Day Request:</strong><br>
+                    <a href="https://docs.google.com/document/d/1dFNiAjIhzj4-EQHvpCAgtRPVJdbURnJ5/edit" target="_blank">Request Form</a></li>
+                <li><strong>Student Supervision & Incident Reporting:</strong><br>
+                    <a href="https://docs.google.com/document/d/1wZeCfds8kzRp7YgDKbNKg9vwnoE8UulWaagIbv8tW6o/edit?tab=t.0" target="_blank">Protocols Guide</a></li>
+            </ul>
+
+            <h3>Curriculum & Pacing</h3>
+            <ul>
+                <li><strong>Grades K-2 Wit & Wisdom/Phonics:</strong><br>
+                    <a href="https://drive.google.com/drive/folders/1JGvj0dUMLFTsSasrvEF7bEfhi6q9Es-y" target="_blank">Pacing Calendar</a></li>
+                <li><strong>Grades 3-5 Wit & Wisdom ELA:</strong><br>
+                    <a href="https://drive.google.com/drive/folders/1bkZRyQ-B-p3ubFyfJ4Mliu7Ky08NSyPH" target="_blank">Pacing Calendar</a></li>
+            </ul>
+
+            <h3>School Planning & Data</h3>
+            <ul>
+                <li><strong>P.S./I.S. 66 Data Tracker:</strong><br>
+                    <a href="https://docs.google.com/spreadsheets/d/1aZfvpviE8KVsk1yJTHm58A4ktYXghqXv8pb1Y6GC8f8/edit?gid=98258349#gid=98258349" target="_blank">Student Data Dashboard</a></li>
+                <li><strong>SY 2025-26 Professional Development Plan:</strong><br>
+                    <a href="https://docs.google.com/spreadsheets/d/1gleRDLJYGXTZJ_NjIpuzdd6rbfpXH9bLkEcKCsqGuoU/edit?gid=832670319#gid=832670319" target="_blank">PD Calendar</a></li>
+                <li><strong>SY 2025-26 Intervention Plan:</strong><br>
+                    <a href="https://docs.google.com/spreadsheets/d/1jGe1ktzRZU9girk04yoNKoUDo8P3_dVD2_MASQW_YHg/edit?gid=261969284#gid=261969284" target="_blank">Intervention Support</a></li>
+            </ul>
+        </div>
+
+        <!-- Slide 13: Welcome to the Blue Jays Family -->
+        <div class="slide">
+            <h2>🎉 Welcome to the Blue Jays Family!</h2>
+
+            <div class="highlight">
+                <p style="font-size: 1.3em; text-align: center;"><strong>You're joining a community dedicated to empowering learners through data-informed, differentiated instruction. Together, we'll ensure all students master essential skills for lifelong success!</strong></p>
+            </div>
+
+            <h3>Key Reminders for Success</h3>
+            <ul>
+                <li>Lead with <strong>T.L.C.</strong> - Trust, Loyalty, Children</li>
+                <li>Focus on <strong>literacy across all subjects</strong> and clear learning targets</li>
+                <li>Embrace <strong>restorative practices</strong> and our community agreements</li>
+                <li>Use <strong>data-driven instruction</strong> with meaningful feedback</li>
+                <li>Follow safety protocols and professional expectations</li>
+            </ul>
+
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <h3>📧 Questions?</h3>
+                    <p>Never hesitate to ask - your team is here to support you!</p>
+                </div>
+                <div class="icon-item">
+                    <h3>📅 Next Steps</h3>
+                    <p>Review staff handbook and submit signed acknowledgment</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px; font-size: 1.3em; color: #3498db; font-weight: bold;">
+                #RiseAndThrive #LeadWithTLC
+            </div>
+            <p style="text-align: center; margin-top: 20px; font-size: 1.2em; color: #3498db;"><strong>B.L.U.E. - Brilliant Learners United in Excellence! 🌟</strong></p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">Previous</button>
+            <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">Next</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        // Set total slides counter
+        document.getElementById('total-slides').textContent = totalSlides;
+
+        function showSlide(n) {
+            // Hide all slides
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+            
+            // Update current slide index
+            currentSlide = n;
+            if (currentSlide >= totalSlides) currentSlide = totalSlides - 1;
+            if (currentSlide < 0) currentSlide = 0;
+            
+            // Show current slide
+            slides[currentSlide].style.display = 'block';
+            
+            // Update counter
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+            
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = currentSlide === 0;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+        }
+
+        function changeSlide(direction) {
+            if (direction === 1 && currentSlide < totalSlides - 1) {
+                showSlide(currentSlide + 1);
+            } else if (direction === -1 && currentSlide > 0) {
+                showSlide(currentSlide - 1);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            showSlide(0);
+        });
+    </script>
+</body>
+</html>
